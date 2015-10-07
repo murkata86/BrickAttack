@@ -1,0 +1,6 @@
+D:\C#\BrickAttack\BrickAttack\bin\Debug\BrickAttack.exe.config
+D:\C#\BrickAttack\BrickAttack\bin\Debug\BrickAttack.exe
+D:\C#\BrickAttack\BrickAttack\bin\Debug\BrickAttack.pdb
+D:\C#\BrickAttack\BrickAttack\obj\Debug\BrickAttack.csprojResolveAssemblyReference.cache
+D:\C#\BrickAttack\BrickAttack\obj\Debug\BrickAttack.exe
+D:\C#\BrickAttack\BrickAttack\obj\Debug\BrickAttack.pdb
