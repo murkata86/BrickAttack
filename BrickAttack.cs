@@ -14,6 +14,7 @@ namespace BrickAttack
 
 		static int[] horizontalDirection;
 		static int[] verticalDirection;
+		static int[,] brickWall;
 
 		static int currentDirectionX;
 		static int currentDirectionY;
@@ -24,8 +25,8 @@ namespace BrickAttack
 
 		static void Settings()
 		{
-			Console.SetWindowSize(59, 39);
-			Console.SetBufferSize(60, 40);
+			Console.SetWindowSize(69, 49);
+			Console.SetBufferSize(70, 50);
 			Console.Title = "Brick Attack";
 
 			ballX = Console.WindowWidth / 2;
@@ -38,6 +39,7 @@ namespace BrickAttack
 			currentDirectionY = 0;
 
 			padX = Console.WindowWidth - 20;
+			brickWall = new int[Console.WindowWidth, Console.WindowHeight];
 		}
 		static void BallMovement()
 		{
@@ -156,7 +158,38 @@ namespace BrickAttack
 			var line = string.Concat(Enumerable.Repeat("-", Console.WindowWidth));
 			Console.WriteLine(line);
 		}
-		
+		static void InitializeBricks()
+		{
+			for (int i = 5; i < 64; i++)
+			{
+				for (int j = 5; j < 20; j++)
+				{
+					brickWall[i, j] = 1;
+				}
+			}
+		}
+
+		static void DisplayBricks()
+		{
+			for (int i = 0; i < brickWall.GetLength(0); i++)
+			{
+				for (int j = 0; j < brickWall.GetLength(1); j++)
+				{
+					if (brickWall[i,j] != 0)
+					{
+						Console.SetCursorPosition(i, j);
+						if (j % 3 == 0)
+						{
+							Console.Write("=");
+						}
+						else
+						{
+							Console.Write("*");
+						}						
+					}
+				}
+			}
+		}
 
 		static void Main()
 		{
@@ -166,6 +199,8 @@ namespace BrickAttack
 
 		static void Engine()
 		{
+			InitializeBricks();
+			DisplayBricks();
 			DisplayPad();
 			int speed = 0;
 			while (true)
