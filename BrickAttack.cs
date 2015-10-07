@@ -51,11 +51,11 @@ namespace BrickAttack
 		}
 		static void CollisionWithWall()
 		{
-			if (ballX <= 0)
+			if (ballX <= 1)
 			{
 				ChangeXDirection();
 			}
-			if (ballX >= Console.WindowWidth)
+			if (ballX >= Console.WindowWidth - 2)
 			{
 				ChangeXDirection();
 			}
@@ -70,10 +70,10 @@ namespace BrickAttack
 		}
 		static void CollisionWithPadd()
 		{
-			if (ballY + 1 == padY && ballX >=pa)
-			{
+			//if (ballY + 1 == padY && ballX >=pa)
+			//{
 
-			}
+			//}
 		}
 		static void ChangeXDirection()
 		{
