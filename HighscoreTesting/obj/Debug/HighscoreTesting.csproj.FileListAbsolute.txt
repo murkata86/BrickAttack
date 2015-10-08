@@ -1,6 +1,0 @@
-D:\C#\BrickAttack\HighscoreTesting\bin\Debug\HighscoreTesting.exe.config
-D:\C#\BrickAttack\HighscoreTesting\bin\Debug\HighscoreTesting.exe
-D:\C#\BrickAttack\HighscoreTesting\bin\Debug\HighscoreTesting.pdb
-D:\C#\BrickAttack\HighscoreTesting\obj\Debug\HighscoreTesting.csprojResolveAssemblyReference.cache
-D:\C#\BrickAttack\HighscoreTesting\obj\Debug\HighscoreTesting.exe
-D:\C#\BrickAttack\HighscoreTesting\obj\Debug\HighscoreTesting.pdb
